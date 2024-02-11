@@ -48,7 +48,7 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Convert README.md to index.html
         run: |
-          pandoc -s README.md -o _site/index.html
+          pandoc -s README.md -o ./index.html --metadata title='Terra-rebirth assets'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
